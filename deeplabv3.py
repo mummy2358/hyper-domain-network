@@ -20,7 +20,7 @@ def bottleneck(inputs,kernel_size=7,kernel_num=16,strides=2,trainable=True):
   return output
 
 def resnet_block(inputs,kernel_size=3,strides=2,kernel_num=64,is_training=True,use_bias=True,block_name="block1"):
-  # whether bias here? need to test
+  # No bias here since we want a tight and simple structure as possible
   # strides means the first convolution layer's strides
   # 3 layers bottleneck design
   # identical shortcut and zero padding for increasing dimension
